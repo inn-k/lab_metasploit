@@ -15,14 +15,14 @@
 ---
 
 ## 🌟 Descripción
-Este proyecto reproduce un **ataque controlado con Metasploit** contra una máquina vulnerable dentro de un entorno totalmente aislado.  
+**Ataque controlado con Metasploit** contra una máquina vulnerable dentro de un entorno totalmente aislado para mayor seguridad.  
 Durante la simulación se generan eventos de seguridad que luego son **detectados, analizados y correlacionados en Wazuh (SIEM)**, complementado con Suricata para la inspección de tráfico de red.
 
 El laboratorio permite observar el ciclo completo: **ataque → explotación → post-explotación → detección → análisis**.
 
 ---
 
-## 🎯 Objetivos del Laboratorio
+## 🎯 Objetivos
 • Simular un ataque controlado utilizando **Metasploit**.  
 • Explotar vulnerabilidades conocidas en máquinas intencionalmente vulnerables.  
 • Detectar actividades maliciosas mediante **Wazuh y Suricata**.  
@@ -31,15 +31,12 @@ El laboratorio permite observar el ciclo completo: **ataque → explotación →
 
 ---
 
-## 📁 Arquitectura del Entorno
-Laboratorio montado sobre **VirtualBox** en red aislada para evitar cualquier tipo de riesgo.
+## 📁 Arquitectura
 
-Red: \
-• Tipo de red: **Host-Only / NAT combinado**  
-• Segmento: **10.0.2.0/24**  
-• Sin acceso a Internet (entorno cerrado)
-
-Máquinas Virtuales: 
+• Tipo de red **Host-Only / NAT combinado**. \
+• Segmento **10.0.2.0/24**. \
+• Sin acceso a Internet (entorno cerrado).
+ 
 | Rol | Sistema | IP | Herramientas |
 |-----|---------|----|--------------|
 | **Atacante** | Kali Linux | 10.0.2.10 | Metasploit, Nmap, Netcat, Wireshark/Tshark |
@@ -49,29 +46,29 @@ Máquinas Virtuales:
 ---
 
 ## 🧠 Metodología
-Fase 1 – Preparación del Entorno \
-• Configuración de red aislada  
-• Instalación de máquinas virtuales  
+Fase 1 – Preparación del Entorno: \
+• Configuración de red aislada \
+• Instalación de máquinas virtuales \
 • Implementación de Wazuh + Suricata  
 
-Fase 2 – Reconocimiento \
-• Escaneo de red con **Nmap**  
-• Enumeración de servicios  
+Fase 2 – Reconocimiento: \
+• Escaneo de red con **Nmap** \
+• Enumeración de servicios \
 • Identificación de vulnerabilidades  
 
-Fase 3 – Explotación \
-• Uso de **Metasploit**  
-• Ejecución de exploits válidos  
+Fase 3 – Explotación: \
+• Uso de **Metasploit** \
+• Ejecución de exploits válidos \
 • Obtención de sesión en el sistema objetivo  
 
-Fase 4 – Post-Explotación \
-• Enumeración del host comprometido  
-• Escalada de privilegios  
+Fase 4 – Post-Explotación: \
+• Enumeración del host comprometido \
+• Escalada de privilegios \
 • Intento de persistencia  
 
-Fase 5 – Detección y Análisis \
-• Revisión de alertas y logs en **Wazuh**  
-• Análisis de tráfico con Suricata  
+Fase 5 – Detección y Análisis: \
+• Revisión de alertas y logs en **Wazuh** \
+• Análisis de tráfico con Suricata \
 • Correlación de eventos y validación de reglas  
 
 ---
