@@ -1,24 +1,23 @@
 # 🛡️ Simulación de Ataque Controlado y Detección con SIEM
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-293137?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Networking](https://img.shields.io/badge/Networking-008CFF?style=for-the-badge&logo=cisco&logoColor=white)
-![Security](https://img.shields.io/badge/Blue_Team-0A0A0A?style=for-the-badge&logo=hackthebox&logoColor=white)
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2A2E35?style=for-the-badge&logo=metasploit&logoColor=blue)
-![Nmap](https://img.shields.io/badge/Nmap-004B87?style=for-the-badge&logo=nmap&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-005C84?style=for-the-badge&logo=wazuh&logoColor=white)
-![Suricata](https://img.shields.io/badge/Suricata-EF3A25?style=for-the-badge&logo=suricata&logoColor=white)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
+![Security](https://img.shields.io/badge/Blue_Team-101345?style=for-the-badge&logo=hackthebox&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-182028?style=for-the-badge&logo=metasploit&logoColor=blue)
+![Nmap](https://img.shields.io/badge/Nmap-e0f7ff?style=for-the-badge&logo=nmap&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-3585f9?style=for-the-badge&logo=wazuh&logoColor=white)
+![Suricata](https://img.shields.io/badge/Suricata-f45a1c?style=for-the-badge&logo=suricata&logoColor=white)
 
 Laboratorio práctico orientado a **ciberseguridad defensiva**, que integra técnicas de pentesting controlado con análisis y detección mediante **Wazuh, Suricata y Linux**.  
 El objetivo es demostrar cómo un entorno SOC puede identificar, registrar y analizar actividades maliciosas reales en un laboratorio seguro.
 
 ---
 
-## 📋 Descripción del Proyecto
+## 🌟 Descripción del Proyecto
 Este proyecto reproduce un **ataque controlado con Metasploit** contra una máquina vulnerable dentro de un entorno totalmente aislado.  
 Durante la simulación se generan eventos de seguridad que luego son **detectados, analizados y correlacionados en Wazuh (SIEM)**, complementado con Suricata para la inspección de tráfico de red.
 
@@ -35,15 +34,15 @@ El laboratorio permite observar el ciclo completo: **ataque → explotación →
 
 ---
 
-## 🏗️ Arquitectura del Entorno
+## 📁 Arquitectura del Entorno
 Laboratorio montado sobre **VirtualBox** en red aislada para evitar cualquier tipo de riesgo.
 
-### 🔐 Red
+Red: \
 • Tipo de red: **Host-Only / NAT combinado**  
 • Segmento: **10.0.2.0/24**  
 • Sin acceso a Internet (entorno cerrado)
 
-### 🖥️ Máquinas Virtuales
+Máquinas Virtuales: 
 | Rol | Sistema | IP | Herramientas |
 |-----|---------|----|--------------|
 | **Atacante** | Kali Linux | 10.0.2.10 | Metasploit, Nmap, Netcat, Wireshark/Tshark |
@@ -52,28 +51,28 @@ Laboratorio montado sobre **VirtualBox** en red aislada para evitar cualquier ti
 
 ---
 
-## 📊 Metodología
-### **Fase 1 – Preparación del Entorno**
+## 🧠 Metodología
+Fase 1 – Preparación del Entorno \
 • Configuración de red aislada  
 • Instalación de máquinas virtuales  
 • Implementación de Wazuh + Suricata  
 
-### **Fase 2 – Reconocimiento**
+Fase 2 – Reconocimiento \
 • Escaneo de red con **Nmap**  
 • Enumeración de servicios  
 • Identificación de vulnerabilidades  
 
-### **Fase 3 – Explotación**
+Fase 3 – Explotación \
 • Uso de **Metasploit**  
 • Ejecución de exploits válidos  
 • Obtención de sesión en el sistema objetivo  
 
-### **Fase 4 – Post-Explotación**
+Fase 4 – Post-Explotación \
 • Enumeración del host comprometido  
 • Escalada de privilegios  
 • Intento de persistencia  
 
-### **Fase 5 – Detección y Análisis**
+Fase 5 – Detección y Análisis \
 • Revisión de alertas y logs en **Wazuh**  
 • Análisis de tráfico con Suricata  
 • Correlación de eventos y validación de reglas  
