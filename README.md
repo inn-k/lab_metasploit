@@ -6,6 +6,12 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Networking](https://img.shields.io/badge/Networking-008CFF?style=for-the-badge&logo=cisco&logoColor=white)
 ![Security](https://img.shields.io/badge/Blue_Team-0A0A0A?style=for-the-badge&logo=hackthebox&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-2A2E35?style=for-the-badge&logo=metasploit&logoColor=blue)
+![Nmap](https://img.shields.io/badge/Nmap-004B87?style=for-the-badge&logo=nmap&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-005C84?style=for-the-badge&logo=wazuh&logoColor=white)
+![Suricata](https://img.shields.io/badge/Suricata-EF3A25?style=for-the-badge&logo=suricata&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
 
 Laboratorio práctico orientado a **ciberseguridad defensiva**, que integra técnicas de pentesting controlado con análisis y detección mediante **Wazuh, Suricata y Linux**.  
 El objetivo es demostrar cómo un entorno SOC puede identificar, registrar y analizar actividades maliciosas reales en un laboratorio seguro.
@@ -71,17 +77,6 @@ Laboratorio montado sobre **VirtualBox** en red aislada para evitar cualquier ti
 • Revisión de alertas y logs en **Wazuh**  
 • Análisis de tráfico con Suricata  
 • Correlación de eventos y validación de reglas  
-
----
-
-## 🛠️ Herramientas Utilizadas
-
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2A2E35?style=for-the-badge&logo=metasploit&logoColor=blue)
-![Nmap](https://img.shields.io/badge/Nmap-004B87?style=for-the-badge&logo=nmap&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-005C84?style=for-the-badge&logo=wazuh&logoColor=white)
-![Suricata](https://img.shields.io/badge/Suricata-EF3A25?style=for-the-badge&logo=suricata&logoColor=white)
-![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
 
 ---
 
