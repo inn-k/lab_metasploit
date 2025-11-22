@@ -12,12 +12,9 @@
 ![Wazuh](https://img.shields.io/badge/Wazuh-3585f9?style=for-the-badge&logo=wazuh&logoColor=white)
 ![Suricata](https://img.shields.io/badge/Suricata-f45a1c?style=for-the-badge&logo=suricata&logoColor=white)
 
-Laboratorio práctico orientado a **ciberseguridad defensiva**, que integra técnicas de pentesting controlado con análisis y detección mediante **Wazuh, Suricata y Linux**.  
-El objetivo es demostrar cómo un entorno SOC puede identificar, registrar y analizar actividades maliciosas reales en un laboratorio seguro.
-
 ---
 
-## 🌟 Descripción del Proyecto
+## 🌟 Descripción
 Este proyecto reproduce un **ataque controlado con Metasploit** contra una máquina vulnerable dentro de un entorno totalmente aislado.  
 Durante la simulación se generan eventos de seguridad que luego son **detectados, analizados y correlacionados en Wazuh (SIEM)**, complementado con Suricata para la inspección de tráfico de red.
 
